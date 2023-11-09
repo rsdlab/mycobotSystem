@@ -1,0 +1,54 @@
+# myCobotAruco CMake config file
+#
+# This file sets the following variables:
+# myCobotAruco_FOUND - Always TRUE.
+# myCobotAruco_INCLUDE_DIRS - Directories containing the myCobotAruco include files.
+# myCobotAruco_IDL_DIRS - Directories containing the myCobotAruco IDL files.
+# myCobotAruco_LIBRARIES - Libraries needed to use myCobotAruco.
+# myCobotAruco_DEFINITIONS - Compiler flags for myCobotAruco.
+# myCobotAruco_VERSION - The version of myCobotAruco found.
+# myCobotAruco_VERSION_MAJOR - The major version of myCobotAruco found.
+# myCobotAruco_VERSION_MINOR - The minor version of myCobotAruco found.
+# myCobotAruco_VERSION_REVISION - The revision version of myCobotAruco found.
+# myCobotAruco_VERSION_CANDIDATE - The candidate version of myCobotAruco found.
+
+message(STATUS "Found myCobotAruco-@PROJECT_VERSION@")
+set(myCobotAruco_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(myCobotAruco_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(myCobotAruco_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(myCobotAruco_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(myCobotAruco_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(myCobotAruco_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(myCobotAruco_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(myCobotAruco_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(myCobotAruco_VERSION @PROJECT_VERSION@)
+set(myCobotAruco_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(myCobotAruco_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(myCobotAruco_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(myCobotAruco_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+
