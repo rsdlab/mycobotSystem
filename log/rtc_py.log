@@ -1,0 +1,116 @@
+2023-11-08 19:31:42,372 file.manager INFO 2.0.1
+2023-11-08 19:31:42,372 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:31:42,372 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-11-08 19:31:42,372 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:31:42,372 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-11-08 19:31:42,372 file.manager INFO   All right reserved.
+2023-11-08 19:31:42,372 file.manager INFO Manager starting.
+2023-11-08 19:31:42,372 file.manager INFO Starting local logging.
+2023-11-08 19:31:42,375 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost:2809
+2023-11-08 19:31:42,379 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-11-08 19:31:43,236 file.manager INFO Component instance conf file: conf/myCobot0.conf loaded.
+2023-11-08 19:31:43,238 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:31:43,238 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:31:43,239 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:31:43,242 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:31:43,248 file.manager INFO Component instance conf file: conf/myCobotAruco0.conf loaded.
+2023-11-08 19:31:43,249 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:31:43,249 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:31:43,250 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:31:43,252 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:31:43,259 file.manager INFO Component instance conf file: conf/GUI_mycobot0.conf loaded.
+2023-11-08 19:31:43,261 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:31:43,261 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:31:43,261 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:31:43,263 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:35:07,115 file.manager INFO 2.0.1
+2023-11-08 19:35:07,115 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:35:07,115 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-11-08 19:35:07,115 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:35:07,115 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-11-08 19:35:07,115 file.manager INFO   All right reserved.
+2023-11-08 19:35:07,115 file.manager INFO Manager starting.
+2023-11-08 19:35:07,115 file.manager INFO Starting local logging.
+2023-11-08 19:35:07,117 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost:2809
+2023-11-08 19:35:07,121 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-11-08 19:35:08,932 file.manager INFO Component instance conf file: conf/myCobot0.conf loaded.
+2023-11-08 19:35:08,934 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:35:08,934 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:35:08,934 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:35:08,936 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:35:08,942 file.manager INFO Component instance conf file: conf/myCobotAruco0.conf loaded.
+2023-11-08 19:35:08,944 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:35:08,945 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:35:08,945 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:35:08,948 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:35:08,953 file.manager INFO Component instance conf file: conf/GUI_mycobot0.conf loaded.
+2023-11-08 19:35:08,955 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:35:08,955 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:35:08,955 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:35:08,957 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:35:12,525 file.ec_base WARNING The component is not responding.
+2023-11-08 19:35:12,525 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:37:18,147 file.ec_base ERROR The component is not responding.
+2023-11-08 19:37:18,147 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:37:18,809 file.ec_base ERROR The component is not responding.
+2023-11-08 19:37:18,809 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:37:42,266 file.manager INFO 2.0.1
+2023-11-08 19:37:42,266 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:37:42,266 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-11-08 19:37:42,266 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:37:42,267 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-11-08 19:37:42,267 file.manager INFO   All right reserved.
+2023-11-08 19:37:42,267 file.manager INFO Manager starting.
+2023-11-08 19:37:42,267 file.manager INFO Starting local logging.
+2023-11-08 19:37:42,268 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost:2809
+2023-11-08 19:37:42,272 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-11-08 19:37:42,695 file.manager INFO Component instance conf file: conf/myCobot0.conf loaded.
+2023-11-08 19:37:42,697 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:37:42,697 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:37:42,698 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:37:42,700 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:37:42,705 file.manager INFO Component instance conf file: conf/myCobotAruco0.conf loaded.
+2023-11-08 19:37:42,706 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:37:42,707 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:37:42,708 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:37:42,711 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:37:42,716 file.manager INFO Component instance conf file: conf/GUI_mycobot0.conf loaded.
+2023-11-08 19:37:42,717 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:37:42,717 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:37:42,718 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:37:42,719 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:37:47,671 file.ec_base WARNING The component is not responding.
+2023-11-08 19:37:47,671 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:40:00,691 file.ec_base ERROR The component is not responding.
+2023-11-08 19:40:00,691 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:40:01,357 file.ec_base ERROR The component is not responding.
+2023-11-08 19:40:01,357 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:40:20,429 file.manager INFO 2.0.1
+2023-11-08 19:40:20,429 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:40:20,429 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-11-08 19:40:20,429 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-11-08 19:40:20,429 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-11-08 19:40:20,429 file.manager INFO   All right reserved.
+2023-11-08 19:40:20,429 file.manager INFO Manager starting.
+2023-11-08 19:40:20,429 file.manager INFO Starting local logging.
+2023-11-08 19:40:20,431 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost:2809
+2023-11-08 19:40:20,434 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-11-08 19:40:20,815 file.manager INFO Component instance conf file: conf/myCobot0.conf loaded.
+2023-11-08 19:40:20,817 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:40:20,817 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:40:20,818 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:40:20,820 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:40:20,825 file.manager INFO Component instance conf file: conf/myCobotAruco0.conf loaded.
+2023-11-08 19:40:20,827 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:40:20,827 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:40:20,827 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:40:20,829 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:40:20,834 file.manager INFO Component instance conf file: conf/GUI_mycobot0.conf loaded.
+2023-11-08 19:40:20,836 file.ec_base INFO setRate(1000000.000000) done
+2023-11-08 19:40:20,836 file.ec_base INFO setRate(1000.000000) done
+2023-11-08 19:40:20,836 file.rtobject INFO 1 execution context was created.
+2023-11-08 19:40:20,837 file.rtobject INFO Initial active configuration set is default.
+2023-11-08 19:40:29,477 file.ec_base ERROR The component is not responding.
+2023-11-08 19:40:29,478 file.ec_base ERROR Unknown error: Invalid state transition.
+2023-11-08 19:40:30,143 file.ec_base ERROR The component is not responding.
+2023-11-08 19:40:30,143 file.ec_base ERROR Unknown error: Invalid state transition.

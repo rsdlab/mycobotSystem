@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<rts:RtsProfile xmlns:rts="http://www.openrtp.org/namespaces/rts" xmlns:rtsExt="http://www.openrtp.org/namespaces/rts_ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" rts:id="RTSystem:mycobotSystem:mycobotSystem:1" rts:abstract="rsdlab" rts:creationDate="2023-11-08T19:33:01" rts:updateDate="2023-11-08T19:33:01" rts:version="0.2">
+    <rts:Components xsi:type="rtsExt:component_ext" rts:id="RTC:TMU:Manipulator:myCobot:1.0.0" rts:pathUri="localhost:2809/myCobot0.rtc" rts:activeConfigurationSet="default" rts:instanceName="myCobot0" rts:compositeType="None" rts:isRequired="true" rtsExt:visible="true">
+        <rts:ServicePorts xsi:type="rtsExt:serviceport_ext" rts:name="middle"/>
+        <rts:ServicePorts xsi:type="rtsExt:serviceport_ext" rts:name="common"/>
+        <rts:ConfigurationSets rts:id="default">
+            <rts:ConfigurationData rts:name="com_port" rts:data="/dev/ttyACM0"/>
+            <rts:ConfigurationData rts:name="baudrate" rts:data="115200"/>
+            <rts:ConfigurationData rts:name="solenoid_pin" rts:data="2"/>
+            <rts:ConfigurationData rts:name="motor_pin" rts:data="5"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__widget__">
+            <rts:ConfigurationData rts:name="com_port" rts:data="text"/>
+            <rts:ConfigurationData rts:name="baudrate" rts:data="radio"/>
+            <rts:ConfigurationData rts:name="solenoid_pin" rts:data="text"/>
+            <rts:ConfigurationData rts:name="motor_pin" rts:data="text"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__constraints__">
+            <rts:ConfigurationData rts:name="baudrate" rts:data="(1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200)"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__type__">
+            <rts:ConfigurationData rts:name="com_port" rts:data="string"/>
+            <rts:ConfigurationData rts:name="baudrate" rts:data="int"/>
+            <rts:ConfigurationData rts:name="solenoid_pin" rts:data="int"/>
+            <rts:ConfigurationData rts:name="motor_pin" rts:data="int"/>
+        </rts:ConfigurationSets>
+        <rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0"/>
+        <rtsExt:Location rtsExt:x="0" rtsExt:y="0" rtsExt:height="0" rtsExt:width="0" rtsExt:direction="down"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000100000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+    </rts:Components>
+    <rts:Components xsi:type="rtsExt:component_ext" rts:id="RTC:TMU:Manipulator:myCobotAruco:1.0.0" rts:pathUri="localhost:2809/myCobotAruco0.rtc" rts:activeConfigurationSet="default" rts:instanceName="myCobotAruco0" rts:compositeType="None" rts:isRequired="true" rtsExt:visible="true">
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="poseIn" rtsExt:visible="true"/>
+        <rts:ServicePorts xsi:type="rtsExt:serviceport_ext" rts:name="middle"/>
+        <rts:ServicePorts xsi:type="rtsExt:serviceport_ext" rts:name="common"/>
+        <rts:ConfigurationSets rts:id="default"/>
+        <rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0"/>
+        <rtsExt:Location rtsExt:x="0" rtsExt:y="0" rtsExt:height="0" rtsExt:width="0" rtsExt:direction="down"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000800000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+    </rts:Components>
+    <rts:Components xsi:type="rtsExt:component_ext" rts:id="RTC:VenderName:Category:GUI_mycobot:1.0.0" rts:pathUri="localhost:2809/GUI_mycobot0.rtc" rts:activeConfigurationSet="default" rts:instanceName="GUI_mycobot0" rts:compositeType="None" rts:isRequired="true" rtsExt:visible="true">
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="poseOut" rtsExt:visible="true"/>
+        <rts:ConfigurationSets rts:id="default"/>
+        <rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0"/>
+        <rtsExt:Location rtsExt:x="0" rtsExt:y="0" rtsExt:height="0" rtsExt:width="0" rtsExt:direction="down"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000e00000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+    </rts:Components>
+    <rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="0b9e4f58-7e22-11ee-ab8c-07491db6ec8c" rts:name="poseOutposeIn" rts:dataType="IDL:RTC/TimedPose3D:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="new">
+        <rts:sourceDataPort rts:componentId="RTC:VenderName:Category:GUI_mycobot:1.0.0" rts:instanceName="GUI_mycobot0" xsi:type="rtsExt:target_port_ext" rts:portName="GUI_mycobot0.poseOut">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/GUI_mycobot0.rtc"/>
+        </rts:sourceDataPort>
+        <rts:targetDataPort rts:componentId="RTC:TMU:Manipulator:myCobotAruco:1.0.0" rts:instanceName="myCobotAruco0" xsi:type="rtsExt:target_port_ext" rts:portName="myCobotAruco0.poseIn">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/manager_py.mgr/myCobotAruco0.rtc"/>
+        </rts:targetDataPort>
+        <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
+        <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
+        <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="new"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedPose3D:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
+        <rtsExt:Properties rtsExt:name="dataport.outport.data_type" rtsExt:value="IDL:RTC/TimedPose3D:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.inport.data_type" rtsExt:value="IDL:RTC/TimedPose3D:1.0"/>
+    </rts:DataPortConnectors>
+    <rts:ServicePortConnectors xsi:type="rtsExt:serviceport_connector_ext" rts:connectorId="133d8bc0-7e22-11ee-ab8c-07491db6ec8c" rts:name="middlemiddle">
+        <rts:sourceServicePort rts:componentId="RTC:TMU:Manipulator:myCobot:1.0.0" rts:instanceName="myCobot0" xsi:type="rtsExt:target_port_ext" rts:portName="myCobot0.middle">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/myCobot0.rtc"/>
+        </rts:sourceServicePort>
+        <rts:targetServicePort rts:componentId="RTC:TMU:Manipulator:myCobotAruco:1.0.0" rts:instanceName="myCobotAruco0" xsi:type="rtsExt:target_port_ext" rts:portName="myCobotAruco0.middle">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/manager_py.mgr/myCobotAruco0.rtc"/>
+        </rts:targetServicePort>
+        <rtsExt:Properties rtsExt:name="port.port_type" rtsExt:value="CorbaPort"/>
+        <rtsExt:Properties rtsExt:name="myCobot0.port.middle.provided.JARA_ARM::ManipulatorCommonInterface_Middle.JARA_ARM_ManipulatorCommonInterface_Middle" rtsExt:value="IOR:010000003300000049444c3a4a4152415f41524d2f4d616e6970756c61746f72436f6d6d6f6e496e746572666163655f4d6964646c653a312e300000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000500000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+        <rtsExt:Properties rtsExt:name="port.JARA_ARM::ManipulatorCommonInterface_Middle.JARA_ARM_ManipulatorCommonInterface_Middle" rtsExt:value="IOR:010000003300000049444c3a4a4152415f41524d2f4d616e6970756c61746f72436f6d6d6f6e496e746572666163655f4d6964646c653a312e300000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000500000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+    </rts:ServicePortConnectors>
+    <rts:ServicePortConnectors xsi:type="rtsExt:serviceport_connector_ext" rts:connectorId="17d54ce0-7e22-11ee-ab8c-07491db6ec8c" rts:name="commoncommon">
+        <rts:sourceServicePort rts:componentId="RTC:TMU:Manipulator:myCobot:1.0.0" rts:instanceName="myCobot0" xsi:type="rtsExt:target_port_ext" rts:portName="myCobot0.common">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/myCobot0.rtc"/>
+        </rts:sourceServicePort>
+        <rts:targetServicePort rts:componentId="RTC:TMU:Manipulator:myCobotAruco:1.0.0" rts:instanceName="myCobotAruco0" xsi:type="rtsExt:target_port_ext" rts:portName="myCobotAruco0.common">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/manager_py.mgr/myCobotAruco0.rtc"/>
+        </rts:targetServicePort>
+        <rtsExt:Properties rtsExt:name="port.port_type" rtsExt:value="CorbaPort"/>
+        <rtsExt:Properties rtsExt:name="myCobot0.port.common.provided.JARA_ARM::ManipulatorCommonInterface_Common.JARA_ARM_ManipulatorCommonInterface_Common" rtsExt:value="IOR:010000003300000049444c3a4a4152415f41524d2f4d616e6970756c61746f72436f6d6d6f6e496e746572666163655f436f6d6d6f6e3a312e300000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000600000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+        <rtsExt:Properties rtsExt:name="port.JARA_ARM::ManipulatorCommonInterface_Common.JARA_ARM_ManipulatorCommonInterface_Common" rtsExt:value="IOR:010000003300000049444c3a4a4152415f41524d2f4d616e6970756c61746f72436f6d6d6f6e496e746572666163655f436f6d6d6f6e3a312e300000010000000000000086000000010102000f0000003139322e3136382e35302e3133370000fb0a00000e000000fe8e634b650000fcc1000000000600000300000000000000080000000100000000545441010000001c000000010000000100010001000000010001050901010001000000090101000300000016000000010000000b0000003137322e31372e302e310000fb0a"/>
+    </rts:ServicePortConnectors>
+</rts:RtsProfile>
